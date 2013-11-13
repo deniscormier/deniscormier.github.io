@@ -2,7 +2,7 @@
 layout: post
 title:  "About my blog"
 date:   2013-11-12 01:22:00
-categories: about jekyll blog new post
+categories: aussierules programming speedrunning
 ---
 
 Hi! My name is Denis Cormier and I am a computer programmer, Australian rules
@@ -14,10 +14,6 @@ seen.
 
 Have a look at the following pages (however, they are not up yet):
 
-- [Programming][programming]
-- [Aussie rules football][aussierules]
-- [Speedrunning][speedrunning]
-
-[programming]: [http://deniscormier.github.io/programming]
-[aussierules]: [http://deniscormier.github.io/aussierules]
-[speedrunning]: [http://deniscormier.github.io/speedrunning]
+- [Computer programming](http://deniscormier.github.io/programming)
+- [Austrlian rules football](http://deniscormier.github.io/aussierules)
+- [Videogame speedrunning](http://deniscormier.github.io/speedrunning)
