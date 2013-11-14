@@ -15,6 +15,6 @@ seen.
 
 Have a look at the following pages:
 
-- [Computer programming](http://deniscormier.github.io/programming)
-- [Austrlian rules football](http://deniscormier.github.io/aussierules)
-- [Videogame speedrunning](http://deniscormier.github.io/speedrunning)
+- [Computer programming]({{ site.url }}/programming)
+- [Austrlian rules football]({{ site.url }}/aussierules)
+- [Videogame speedrunning]({{ site.url }}/speedrunning)
