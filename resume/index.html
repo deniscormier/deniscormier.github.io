@@ -1,247 +1,807 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 
-	<title>Denis Cormier | Software Developer in Test | denis.r.cormier@gmail.com</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Denis Cormier | Software Developer</title>
+<style type="text/css">
 
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="../css/resume.css" media="all" />
+body.pdf {
+  color: black;
+}
+body.pdf a {
+  text-decoration: none;
+  color: black;
+}
+body.pdf .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+body.pdf .resume {
+  position: relative;
+  padding: 40px 80px;
+}
+body.pdf a[href$='.pdf'] {
+  display: none;
+}
+body.pdf h1 {
+  letter-spacing: 0;
+  margin-top: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+body.pdf h2 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+body.pdf h3 {
+  float: left;
+  width: 16%;
+  font-style: normal;
+}
+body.pdf h3+p {
+  float: left;
+  width: 78%;
+}
+body.pdf blockquote {
+  top: 40px;
+  right: 50px;
+  position: absolute;
+}
+body.pdf ul li {
+  width: 33%;
+  float: left;
+}
+body.pdf ul dl {
+  margin: 0;
+  padding: 0.3em 0 0;
+}
+body.pdf ul dl dt {
+  font-size: 122%;
+  font-weight: normal;
+  margin: 0 0 .75em;
+}
+body.pdf ul dl dd {
+  padding: 0 2em 0 0;
+}
+body.pdf ol {
+  float: left;
+  width: 79%;
+  margin: .7em 0 0;
+}
+body.pdf ol li {
+  width: 33%;
+  margin: 0;
+}
+body.pdf ol li:nth-child(3n) {
+  width: 34%;
+}
+body.pdf ol li:nth-child(1),
+body.pdf ol li:nth-child(2),
+body.pdf ol li:nth-child(3) {
+  border-top: none;
+}
+body.pdf dl {
+  margin: .7em 0 0;
+  page-break-inside: avoid !important;
+  display: block;
+  width: 79%;
+  float: left;
+}
+body.pdf dl strong {
+  float: right;
+  margin-top: -2em;
+}
+body.pdf dl em {
+  font-size: 130%;
+  font-style: normal;
+}
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+body {
+  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+ul dl dt {
+  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  background: whiteSmoke;
+  border: solid #666;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+.resume {
+  position: relative;
+  padding: 10px 20px;
+}
+a {
+  color: #990003;
+}
+a[href$='.pdf'] {
+  display: inline-block;
+  background: #666;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 18px auto;
+  width: 100%;
+  clear: both;
+  border: none;
+  border-top: 1px solid #CCC;
+  font-size: 1px;
+  line-height: 0;
+  overflow: visible;
+  page-break-after: avoid;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h3 {
+  margin: 0px 20px;
+  padding: 0 0 .5em;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+}
+h3+p {
+  margin: .6em 0 16px;
+  padding: 0;
+  display: block;
+  font-size: 104%;
+  line-height: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+ul dl {
+  margin: .3em 0 0;
+  padding: 0;
+  width: 100%;
+}
+ul dl dt {
+  font-size: 100%;
+}
+ul dl dd {
+  margin: 0 0 1em;
+  padding: 0 2em 0 0;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0;
+  padding: 0 0 .75em;
+  width: 84%;
+  display: inline-block;
+}
+ol li {
+  margin: 0 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  float: left;
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+ol li:nth-child(1) {
+  border-top: none;
+}
+dl {
+  display: inline-block;
+  width: 78%;
+  margin: 0;
+  padding: 0;
+}
+dl dt {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+dl dd {
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+dl strong {
+  display: block;
+}
+dl em {
+  display: block;
+  font-size: 110%;
+  margin: .15em 0 .5em;
+  font-style: bold;
+}
+#footer {
+  display: none;
+}
+#footer + p {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  body {
+    padding: 2em 0;
+  }
+  blockquote {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: .5em;
+  }
+  ol {
+    margin: 0 0 0 1em;
+  }
+  ol li {
+    width: 50%;
+    margin: 0;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 57em) {
+  .container {
+    width: 912px;
+  }
+  .resume {
+    position: relative;
+    padding: 40px 50px;
+  }
+  blockquote {
+    top: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h3 {
+    float: left;
+    width: 16%;
+  }
+  h3+p {
+    float: left;
+    width: 78%;
+  }
+  ul li {
+    width: 33%;
+    float: left;
+  }
+  ul dl dt {
+    font-size: 122%;
+    font-weight: normal;
+    margin-bottom: .75em;
+  }
+  ul dl dd {
+    padding: 0 2em 0 0;
+  }
+  ol {
+    float: left;
+    width: 79%;
+    margin: .6em 0 0;
+  }
+  ol li {
+    width: 33%;
+    margin: 0;
+  }
+  ol li:nth-child(3n) {
+    width: 34%;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2),
+  ol li:nth-child(3) {
+    border-top: none;
+  }
+  dl {
+    margin: .5em 0 0;
+  }
+  dl strong {
+    float: right;
+    margin-top: -2em;
+  }
+  dl em {
+    font-size: 130%;
+    font-style: normal;
+  }
+}
+
+</style>
 </head>
-<body>
 
-<div id="doc2" class="yui-t7">
-	<div id="inner">
+<body class="">
 
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
-					<h1>Denis Cormier</h1>
-					<h2>Software Developer in Test</h2>
-				</div>
+<div class="container">
+    <div class="resume">
+        <h1>Denis Cormier</h1>
 
-				<div class="yui-u">
-					<div class="contact-info">
-						<!--<h3><a id="pdf" href="#">Download PDF</a></h3>-->
-						<h3><a href="mailto:denis.r.cormier@gmail.com">denis.r.cormier@gmail.com</a></h3>
-						<!--<h3>Phone number</h3>-->
-					</div><!--// .contact-info -->
-				</div>
-			</div><!--// .yui-gc -->
-		</div><!--// hd -->
+<h2>Software Developer</h2>
 
-		<div id="bd">
-			<div id="yui-main">
-				<div class="yui-b">
+<blockquote>
+  <p><a href="resume.pdf">Download PDF</a><br />
+  <a href="mailto:denis.r.cormier@gmail.com">denis.r.cormier@gmail.com</a></p>
+</blockquote>
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Profile</h2>
-						</div>
-						<div class="yui-u">
-							<p class="enlarge">
-								An enthusiastic, bilingual (french, english) computer programmer from Moncton, NB, Canada with over 3 years of work experience with multiple programming languages across several different programming domains.
-							</p>
-						</div>
-					</div><!--// .yui-gf -->
+<hr />
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Skills</h2>
-						</div>
-						<div class="yui-u">
+<h3 id="profile">Profile</h3>
 
-								<div>
-									<h2>Primary Programming Languages</h2>
-									<ul class="job">
-										<li>Javascript, AngularJS, NodeJS</li>
-										<li>MySQL, MongoDB</li>
-										<li>Scripting (Lua, Python, Bash/Shell, Perl)</li>
-										<li>C/C++, Java</li>
-									</ul>
-								</div>
+<p>An enthusiastic, bilingual (french, english) computer programmer from Moncton, NB, Canada with over 3 years of work
+experience with multiple programming languages across several different programming domains.</p>
 
-								<div>
-									<h2>Tools</h2>
-									<ul class="job">
-										<li>Version control (Git, SVN, Hg)</li>
-										<li>Memory usage/debugging (atop, GDB, Valgrind, Perl debugger)</li>
-										<li>Jenkins continuous integration (CI)</li>
-									</ul>
-								</div>
-								<div>
-									<h2>Various</h2>
-									<ul class="job last">
-										<li>Integrated Development Environments (Atom, Vim, Sublime Text, Eclipse, IntelliJ variants, Visual Studio)</li>
-										<li>GIMP image manipulation</li>
-									</ul>
-								</div>
-						</div>
-					</div><!--// .yui-gf -->
+<hr />
 
-					<div class="yui-gf">
+<h3 id="skills">Skills</h3>
 
-						<div class="yui-u first">
-							<h2>Experience</h2>
-						</div><!--// .yui-u -->
+<ul>
+<li><dl>
+<dt>Primary Programming Languages</dt>
+<dd>Javascript, AngularJS, NodeJS</dd>
 
-						<div class="yui-u">
+<dd>MySQL, MongoDB</dd>
 
-							<div class="job">
-								<h2>Index Exchange Inc.</h2>
-								<h2>(Formerly known as Casale Media Inc.)</h2>
-								<h3>Software Developer in Test</h3>
-								<h4>May 2014 - now</h4>
-								<ul>
-									<li>May 2015 - now: Web application transition to AngularJS: mixture of API (NodeJS) and APP (AngularJS/MySQL/MongoDB) testing, localization (multi-language) testing</li>
-									<li>May 2014 - May 2015: Testing new features (releases) on the product's front-end (Perl-based GUI + MySQL database)</li>
-									<li>Supervised and guided new team members, provided test plans and time estimates to assist in project planning</li>
-									<li>Solved production/support issues, testing fixes provided by developers</li>
-									<li class="last">Coded test suites in Java (Selenium) and Javascript following a transition to a Javascript testing framework</li>
-								</ul>
-							</div>
+<dd>Scripting (Lua, Python, Bash/Shell, Perl)</dd>
 
-							<div class="job">
-								<h2>McAfee Inc.</h2>
-								<h3>Software Developer</h3>
-								<h4>September 2013 - December 2013</h4>
-								<ul>
-									<li>C++ development work on the McAfee Security Center product: Data collection feature enhancements and Security Center bug fixes</li>
-									<li>Python scripting for quick prototyping with Google Analytics</li>
-									<li class="last">Cooperated with Quality Assurance to thoroughly test the software with manual and automated testing</li>
-								</ul>
-							</div>
+<dd>C/C++, Java</dd>
+</dl></li>
+<li><dl>
+<dt>Tools</dt>
+<dd>Version control (Git, SVN, Hg)</dd>
 
-							<div class="job">
-								<h2>McAfee Inc.</h2>
-								<h3>Software Developer</h3>
-								<h4>January 2013 - April 2013</h4>
-								<ul>
-									<li>Improved the build speed and frequency of different projects (Jenkins CI system)</li>
-									<li>Coded a C# application, Windows PowerShell scripts, and Python scripts to automate deploying and testing of various projects</li>
-									<li class="last">Integrated different team's products in the complete CI process in order to attain high-level goals set by upper management</li>
-								</ul>
-							</div>
+<dd>Memory usage/debugging (atop, GDB, Valgrind, Perl debugger)</dd>
 
-							<div class="job">
-								<h2>SurfEasy Inc.</h2>
-								<h3>C/C++ Developer</h3>
-								<h4>May 2012 - August 2012</h4>
-								<ul>
-									<li>Researched and implemented file encryption for the Mozilla Firefox browser using Network Security Services and SQLCipher</li>
-									<li>Worked with C++, Javascript, and XPCOM (Cross Platform Component Object Model) in the Firefox code base</li>
-									<li class="last">Added and configured builds using the Jenkins CI system</li>
-								</ul>
-							</div>
+<dd>Jenkins Continuous Integration (CI)</dd>
+</dl></li>
+<li><dl>
+<dt>Various</dt>
+<dd>Integrated Development Environments (Atom, Vim, Sublime Text, Eclipse, IntelliJ variants, Visual Studio)</dd>
 
-							<div class="job">
-								<h2>RuggedCom Inc.</h2>
-								<h2>(Acquired by Siemens Inc.)</h2>
-								<h3>Software Developer</h3>
-								<h4>May 2012 - August 2012</h4>
-								<ul>
-									<li>Programmed a vital component to a graphical simulation model that replicates hardware time synchronization behaviour using the SciLab and C programming languages</li>
-									<li class="last">Completed a series of IEEE1588 time synchronization test cases with real hardware and different traffic loads to validate the simulation’s behaviour</li>
-								</ul>
-							</div>
+<dd>GIMP image manipulation</dd>
+</dl></li>
+</ul>
 
-							<div class="job">
-								<h2>Medavie Blue Cross Inc.</h2>
-								<h3>IT Programmer</h3>
-								<h4>September 2011 - December 2011</h4>
-								<p>Oracle Forms, Oracle Reports, PL/SQL databases, integration testing</p>
-							</div>
+<hr />
 
-							<div class="job last">
-								<h2>Tennis Canada Inc.</h2>
-								<h3>IT Analyst</h3>
-								<h4>May 2010 - August 2010</h4>
-								<p>Asterisk FreePBX (VoIP system), HTML, PHP, Microsoft Exchange e-mail server</p>
-							</div>
+<h3 id="experience">Experience</h3>
 
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
+<dl>
+<dt>Index Exchange Inc.</dt>
+<dt>(Formerly known as Casale Media Inc.)</dt>
+<dd>
+<p><em>Software Developer in Test II</em>
+<strong>May 2014 - now</strong></p>
 
-					<div class="yui-gf">
+<p>May 2015 - now: Web application transition to AngularJS: mixture of API (NodeJS) and APP (AngularJS/MySQL/MongoDB) testing, localization (multi-language) testing.</p>
 
-						<div class="yui-u first">
-							<h2>Projects</h2>
-						</div><!--// .yui-u -->
+<p>May 2014 - May 2015: Testing new features (releases) on the product&#8217;s front-end (Perl-based GUI + MySQL database).</p>
 
-						<div class="yui-u">
+<p>Supervised and guided new team members, provided test plans and time estimates to assist in project planning.</p>
 
-							<div class="job">
-								<h2>Personal videogame design projects</h2>
-								<h3>Super Flea Platformer (work in progress)</h3>
-								<ul>
-									<li>Unity3D (C# scripting)</li>
-									<li>Useful concepts: fun physics, intuitive controls, collectibles, locks/keys, moving platforms, moving background, persistent data between sessions (save/load) and between levels</li>
-									<li class="last">The latest version of the game: (not yet posted online)</li>
-								</ul>
-								<h3>Fun With Tiles! (work in progress)</h3>
-								<ul>
-									<li>Love2D (Lua scripting)</li>
-									<li>Useful concepts: game loop management, input/output, level loading via JSON files, window management/image manipulation</li>
-									<li class="last">The latest version of the game: (not yet posted online)</li>
-								</ul>
-							</div>
+<p>Solved production/support issues, tested fixes provided by developers.</p>
 
-							<div class="job last">
-								<h2>Operating system project in C and Assembly</h2>
-								<h3>SE 350: Operating Systems course</h3>
-								<h4>January 2012 - April 2012</h4>
-								<ul>
-									<li>Useful concepts: memory layout, memory usage, task switching/scheduling, user/kernel level functions</li>
-									<li>Motorola ARM processor</li>
-									<li class="last">Keil uVision IDE/tools to build/simulate the project</li>
-								</ul>
-							</div>
+<p>Coded test suites in Java (Selenium) and Javascript following a transition to a Javascript testing framework.</p>
+</dd>
 
-						</div><!--// .yui-u -->
-					</div><!--// .yui-gf -->
+<dt>McAfee Inc.</dt>
+<dd>
+<p><em>Software Developer</em>
+<strong>Sept 2013 - Dec 2013</strong></p>
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Education</h2>
-						</div>
-						<div class="yui-u">
-							<div class="job last">
-								<h2>Univerisity of Waterloo - Waterloo, ON</h2>
-								<h3><strong>Bachelor of Software Engineering</strong></h3>
-								<h3>Honours &mdash; Co-operative Program</h3>
-								<h4>September 2009 - April 2014</h4>
-							</div>
-						</div>
-					</div><!--// .yui-gf -->
+<p>C++ development work on the McAfee Security Center product: Data collection feature enhancements and Security Center bug fixes</p>
 
-					<div class="yui-gf last">
-						<div class="yui-u first">
-							<h2>Activities</h2>
-						</div>
-						<div class="yui-u">
-							<ul class="job last">
-								<li>Videogame speedrunning: going from point A to point b by any means necessary using the knowledge of how the game is programmed</li>
-								<li>Videogame programming: Unity3D (C# scripting), Love2D (Lua scripting)</li>
-								<li>Australian rules football</li>
-							</ul>
-						</div>
-					</div><!--// .yui-gf -->
+<p>Python scripting for quick prototyping with Google Analytics</p>
 
-				</div><!--// .yui-b -->
-			</div><!--// yui-main -->
-		</div><!--// bd -->
+<p>Cooperated with Quality Assurance to thoroughly test the software with manual and automated testing</p>
+</dd>
 
-		<div id="ft">
-			<p>Denis Cormier &mdash; <a href="mailto:denis.r.cormier@gmail.com">denis.r.cormier@gmail.com</a></p><!-- &mdash; Phone number</p>-->
-		</div><!--// footer -->
+<dt>McAfee Inc.</dt>
+<dd>
+<p><em>Software Developer</em>
+<strong>Jan 2013 - Apr 2013</strong></p>
 
-	</div><!-- // inner -->
+<p>Improved the build speed and frequency of different projects (Jenkins CI system)</p>
 
-</div><!--// doc -->
+<p>Coded a C# application, Windows PowerShell scripts, and Python scripts to automate deploying and testing of various projects</p>
+
+<p>Integrated different team&#8217;s products in the complete CI process in order to attain high-level goals set by upper management</p>
+</dd>
+
+<dt>SurfEasy Inc.</dt>
+<dd>
+<p><em>C/C++ Developer</em>
+<strong>May 2012 - Aug 2012</strong></p>
+
+<p>Researched and implemented file encryption for the Mozilla Firefox browser using Network Security Services and SQLCipher</p>
+
+<p>Worked with C++, Javascript, and XPCOM (Cross Platform Component Object Model) in the Firefox code base</p>
+
+<p>Added and configured builds using the Jenkins CI system</p>
+</dd>
+
+<dt>RuggedCom Inc.</dt>
+<dt>(Later acquired by Siemens Inc.)</dt>
+<dd>
+<p><em>Software Developer</em>
+<strong>Sept 2011 - Dec 2011</strong></p>
+
+<p>Programmed a vital component to a graphical simulation model that replicates hardware time synchronization behaviour using the SciLab and C programming languages</p>
+
+<p>Completed a series of IEEE1588 time synchronization test cases with real hardware and different traffic loads to validate the simulation’s behaviour</p>
+</dd>
+
+<dt>Medavie Blue Cross Inc.</dt>
+<dd>
+<p><em>IT Programmer</em>
+<strong>Jan 2011 - Apr 2011</strong></p>
+
+<p>Oracle Forms, Oracle Reports, PL/SQL databases, integration testing</p>
+</dd>
+
+<dt>Tennis Canada Inc.</dt>
+<dd>
+<p><em>IT Analyst</em>
+<strong>May 2010 - Aug 2010</strong></p>
+
+<p>Asterisk FreePBX (VoIP system), HTML, PHP, Microsoft Exchange e-mail server</p>
+</dd>
+</dl>
+
+<hr />
+
+<h3 id="projects">Projects</h3>
+
+<dl>
+<dt>Various game projects</dt>
+<dd>
+<p><em>Visit deniscormier.github.io for more information</em>
+<strong>Last 2-3 years</strong></p>
+
+<p>Videogame programming (C# scripting for Unity3D game engine, Lua scripting for Love2D game engine)</p>
+
+<p>Tabletop game design</p>
+</dd>
+
+<dt>Operating system project in C and Assembly</dt>
+<dd>
+<p><em>University course &#8212; SE 350: Operating Systems</em>
+<strong>Jan 2012 - Apr 2012</strong></p>
+
+<p>Useful concepts: memory layout, memory usage, task switching/scheduling, user/kernel level functions</p>
+
+<p>Motorola ARM processor</p>
+
+<p>Keil uVision IDE/tools to build/simulate the project</p>
+</dd>
+</dl>
+
+<hr />
+
+<h3 id="degree">Education</h3>
+
+<dl>
+<dt>Univerisity of Waterloo - Waterloo, ON</dt>
+<dd><em>Bachelor of Software Engineering</em></dd>
+
+<dd>Honours — Co-operative Program
+<strong>Sept 2009 - Apr 2014</strong></dd>
+</dl>
+
+<hr />
+
+<h3 id="footer">Footer</h3>
+
+<p>Denis Cormier &#8212; <a href="mailto:denis.r.cormier@gmail.com">denis.r.cormier@gmail.com</a></p>
+
+<h3 id="footer">Footer</h3>
+
+<p>Website &#8212; <a href="http://deniscormier.github.io">deniscormier.github.io</a></p>
+
+<h3 id="footer">Footer</h3>
+
+<p>Code repositories &#8212; <a href="https://bitbucket.org/deniscormier">bitbucket.org/deniscormier</a></p>
+
+<hr />
+
+    </div>
+</div>
 
 </body>
 </html>
