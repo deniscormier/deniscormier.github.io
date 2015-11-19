@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "About Australian rules football"
+title:  "About Game Design"
 date:   2013-11-13 14:50:00
-categories: aussierules
+categories: gamedesign
 ---
-
-# Title
 
 Some content!
