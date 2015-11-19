@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "About Australian rules football"
-date:   2015-11-20 00:30:00
+title:  "About my Love for Australian Rules Football"
+date:   2015-11-19 11:30:00
 categories: aussierules
 ---
 
